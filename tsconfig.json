@@ -1,0 +1,25 @@
+
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "types": ["jasmine"],
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true
+  },
+  "include": [
+    "./src/**/**/*"
+  ],
+  "types": [
+    "typePatches"
+  ]
+}
