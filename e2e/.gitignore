@@ -64,7 +64,7 @@ test-report.html
 node_modules/
 jspm_packages/
 package-lock.json
-e2e/node_module
+
 # Optional npm cache directory
 .npm
 

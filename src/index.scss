@@ -1,12 +1,8 @@
 body{
-    background: #eee;
-    h1{
-        color: aqua;
-        float: left;
-    }
-    .greeting{
-            display:flex;
-            align-items:center ; /* Verticalcenter center alignment */
-        
-    }
+
+.greeting{
+    display:flex;
+    align-items:center ; /* Verticalcenter center alignment */
+    
+}
 }

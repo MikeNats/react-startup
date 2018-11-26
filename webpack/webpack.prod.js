@@ -1,5 +1,7 @@
 import path from 'path';
 import webPackCommon from './webpack.common';
+import productionPlugins from './plugins';
+
 
 export default {
   ...webPackCommon,

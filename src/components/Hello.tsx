@@ -10,12 +10,12 @@ export interface Props {
 function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: Props) {
   if (enthusiasmLevel <= 0) {
     throw new Error('You could be a little more enthusiastic. :D');
-  }
+  }   
 
   return (
     <div className="hello">
       <div className="greeting">
-      <img width="100" src="./assets/hello-world.png"/>{getExclamationMarks(enthusiasmLevel)}
+        <img width="100" src="./assets/hello-world.png"/>{getExclamationMarks(enthusiasmLevel)}
       </div>
       <div>
         <button onClick={onDecrement}>-</button>
