@@ -4,7 +4,7 @@
   "description": "A complete React pack",
   "main": "index.js",
   "scripts": {
-    "test": "npm run-script local-webserver & (wdio ./config/wdio.js; wdio_ret=$?; kill $(lsof -t -i:9000); exit $wdio_ret)",
+    "test": "npm run-script local-webserver & (wdio wdio.conf.js; wdio_ret=$?; kill $(lsof -t -i:8080); exit $wdio_ret)",
     "local-webserver": "http-server"
   },
   "keywords": [
@@ -14,28 +14,25 @@
   ],
   "author": "Michail Tsougkranis <michail.tsougkranis@gmail.com> (https://uk.linkedin.com/in/michail-tsougkranis-b490b730)",
   "dependencies": {
-    "cross-env": "^5.2.0"
+    "babel-preset-env": "~1.7.0",
+    "babel-register": "~6.26.0",
+    "chai": "~4.1.2",
+    "wdio-cucumber-framework": "~2.2.0",
+    "wdio-phantomjs-service": "~0.2.2",
+    "wdio-selenium-standalone-service": "~0.0.9",
+    "wdio-spec-reporter": "~0.1.2",
+    "webdriverio": "4.13.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/preset-stage-2": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "@types/jasmine": "^3.3.0",
-    "@types/jest": "^18.1.1",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.4",
-    "babel-preset-env": "^1.7.0",
-    "cucumber": "^5.0.2",
-    "http-server": "^0.11.1",
-    "wdio-cucumber-framework": "^0.3.1",
-    "wdio-cucumber-reporter": "0.0.2",
-    "wdio-phantomjs-service": "^0.2.2",
-    "wdio-selenium-standalone-service": "0.0.9",
-    "wdio-spec-reporter": "^0.1.0",
-    "webdriverio": "^4.8.0",
-    "webpack-dev-server": "^3.1.10"
+    "babel-core": "~6.26.3",
+    "babel-jest": "~23.0.1",
+    "babel-polyfill": "~6.26.0",
+    "eslint": "~5.0.0",
+    "eslint-config-airbnb-base": "~13.0.0",
+    "eslint-plugin-import": "~2.13.0",
+    "forever": "~0.15.3",
+    "http-server": "~0.11.0",
+    "jest": "~23.0.0"
   },
   "license": "ISC"
 }
